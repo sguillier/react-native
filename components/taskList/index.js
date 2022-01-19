@@ -47,14 +47,13 @@ const TaskList = () => {
             {itemList.length > 0 ? (
                 <View>
                     <Text style={styles.listTitle}>Lista de Tareas</Text>
-                    <View style={styles.listContainer}>
-                        <FlatList
-                            keyExtractor={(item) => item.id}
-                            refreshing={true}
-                            data={itemList}
-                            renderItem={({ item }) => (<CardItem item={item} deleteItem={deleteItem} setModalData={setModalData} />)}
-                        />
-                    </View>
+                    <FlatList
+                        style={styles.listContainer}
+                        keyExtractor={(item) => item.id}
+                        refreshing={true}
+                        data={itemList}
+                        renderItem={({ item }) => (<CardItem item={item} deleteItem={deleteItem} setModalData={setModalData} />)}
+                    />
                 </View>
             )
                 : (<Text style={styles.listTitle}>Sin Tareas</Text>)}

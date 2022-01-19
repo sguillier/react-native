@@ -4,15 +4,15 @@
  */
 
 import React from 'react';
-import TaskList from './components/taskList/index.js';
-import ModalEditItem from './components/taskList/ModalEditItem/index.js';
+// import TaskList from './components/taskList/index.js';
+import PlayNumber from './components/PlayNumber/index.js';
 
 
 const App = () => {
 
   return (
-    <TaskList />
-    // <ModalEditItem />
+    // <TaskList />
+    <PlayNumber />
   );
 };
 
